@@ -1,5 +1,5 @@
 script_name("SCORE")
-script_version("22.09.2019")
+script_version("01.06.2020")
 script_author("qrlk")
 script_description("textdraw that shows damage, kills, deaths, K/D")
 
@@ -162,7 +162,7 @@ function getending(count)
     return "убийство"
   elseif count == 2 or count == 3 or count == 4 then
     return "убийства"
-  elseif count > 5 then
+  elseif count >= 5 then
     return "убийств"
   end
 end
