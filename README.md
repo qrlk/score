@@ -1,4 +1,4 @@
-<h1 align="center">camhackww</h1>
+<h1 align="center">score</h1>
 
 <p align="center">
 
