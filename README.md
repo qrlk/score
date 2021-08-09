@@ -23,7 +23,9 @@ It also requires **[CLEO 4+](http://cleo.li/?lang=ru)**, **[SAMPFUNCS 5+](https:
 ---
 
 **The following description is in Russian, because it is the main language of the user base**.
-
+<details>
+  <summary>Описание на русском языке.</summary>
+  
 # Описание 
 **SCORE** считает нанесённый дамаг, смерти и килы, считает K/D и сообщает о результативности после вашей смерти.  
 Он рисует текстдрав, на котором по умолчанию нанесенный вами урон за жизнь. Положение и размер текстдрава можно изменить.  
@@ -42,3 +44,4 @@ It also requires **[CLEO 4+](http://cleo.li/?lang=ru)**, **[SAMPFUNCS 5+](https:
   <img src="https://github.com/qrlk/score/raw/master/screens/4.png"/></br>  
   <img src="https://github.com/qrlk/score/raw/master/screens/5.png"/></br> 
 </p>
+</details>
