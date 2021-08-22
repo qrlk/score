@@ -2,6 +2,7 @@ script_name("SCORE")
 script_version("01.06.2020")
 script_author("qrlk")
 script_description("textdraw that shows damage, kills, deaths, K/D")
+script_url("https://github.com/qrlk/score")
 
 local events = require 'lib.samp.events'
 local inicfg = require 'inicfg'
