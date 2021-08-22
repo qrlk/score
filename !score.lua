@@ -49,7 +49,7 @@ function main()
   update("http://qrlk.me/dev/moonloader/score/stats.php", '['..string.upper(thisScript().name)..']: ', "http://vk.com/qrlk.mods", "scorechangelog")
   openchangelog("scorechangelog", "http://qrlk.me/changelog/score")
   -- вырежи тут, если хочешь отключить проверку обновлений
-  
+
   sampRegisterChatCommand("score", function() lua_thread.create(function() updateMenu() submenus_show(mod_submenus_sa, '{348cb2}SCORE v.'..thisScript().version, 'Выбрать', 'Закрыть', 'Назад') end) end)
   sampAddChatMessage("SCORE v"..thisScript().version.." loaded! /score - настройки. <> by qrlk.", 0x348cb2)
   score()
@@ -277,13 +277,13 @@ end
 
 function changehotkey(mode)
   local modes =
-    {
-      [1] = " для дамага за всё время",
-      [2] = " для убийств",
-      [3] = " для смертей",
-      [4] = " для k/d",
-      [5] = " для смены режима сеанс/всё время"
-    }
+  {
+    [1] = " для дамага за всё время",
+    [2] = " для убийств",
+    [3] = " для смертей",
+    [4] = " для k/d",
+    [5] = " для смены режима сеанс/всё время"
+  }
   if tonumber(mode) == nil or tonumber(mode) < 1 or tonumber(mode) > 5 then
     sampAddChatMessage("1) Посмотреть дамаг за сеанс: "..key.id_to_name(settings.score.key1)..". 2) Посмотреть убийства: "..key.id_to_name(settings.score.key2)..". 3) Посмотреть смерти: "..key.id_to_name(settings.score.key3)..". 4) k/d: "..key.id_to_name(settings.score.key4)..". 5) Сеанс/всё время: "..key.id_to_name(settings.score.key5)..".", - 1)
     sampAddChatMessage("Изменить: /scorekey [1|2|3|4|5]", - 1)
@@ -384,8 +384,8 @@ function getweaponname(weapon) -- getweaponname by FYP
     [43] = "Camera",
     [44] = "Night Vis Goggles",
     [45] = "Thermal Goggles",
-    [46] = "Parachute" }
-return names[weapon]
+  [46] = "Parachute" }
+  return names[weapon]
 end
 --------------------------------------------------------------------------------
 -------------------------------------MENU---------------------------------------
@@ -478,7 +478,7 @@ end
 ------------------------------------UPDATE--------------------------------------
 --------------------------------------------------------------------------------
 function update(php, prefix, url, komanda)
-  komandaA=komanda
+  komandaA = komanda
   local dlstatus = require('moonloader').download_status
   local json = getWorkingDirectory() .. '\\'..thisScript().name..'-version.json'
   if doesFileExist(json) then os.remove(json) end
@@ -546,7 +546,7 @@ function update(php, prefix, url, komanda)
                     end
                   end
                 )
-              end, prefix
+                end, prefix
               )
             else
               update = false
@@ -617,8 +617,8 @@ function submenus_show(menu, caption, select_button, close_button, back_button)
             local prev_menu = prev_menus[#prev_menus]
             prev_menus[#prev_menus] = nil
             return display(prev_menu.menu, id - 1, prev_menu.caption)
-        end
-        return false
+          end
+          return false
         end
       end
     until result
