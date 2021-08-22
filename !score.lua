@@ -1,3 +1,5 @@
+require 'lib.moonloader'
+
 script_name("SCORE")
 script_version("01.06.2020")
 script_author("qrlk")
