@@ -1,7 +1,7 @@
 require 'lib.moonloader'
 
 script_name("SCORE")
-script_version("01.06.2020")
+script_version("25.06.2022")
 script_author("qrlk")
 script_description("textdraw that shows damage, kills, deaths, K/D")
 script_url("https://github.com/qrlk/score")
