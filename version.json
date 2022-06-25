@@ -1,5 +1,6 @@
 {
 "latest": "01.06.2020",
 "updateurl": "https://raw.githubusercontent.com/qrlk/score/master/!score.lua",
-"changelog": "https://github.com/qrlk/score/blob/master/CHANGELOG.md"
+"changelog": "https://github.com/qrlk/score/blob/master/CHANGELOG.md",
+  "telemetry": "http://qrlk.me/dev/moonloader/score/stats.php"
 }
